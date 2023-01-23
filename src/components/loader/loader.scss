@@ -1,0 +1,41 @@
+.spinnerContainer {
+  width: 100%;
+  min-height: 85vh;
+  background-color: #12002b;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 64px;
+}
+
+.firstPoint,
+.secondPoint,
+.thirdPoint {
+  opacity: 0;
+}
+.firstPoint {
+  animation: appear 1s linear;
+  animation-iteration-count: infinite;
+}
+.secondPoint {
+  animation: appear 1s 0.2s linear;
+  animation-iteration-count: infinite;
+}
+.thirdPoint {
+  animation: appear 1s 0.4s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
