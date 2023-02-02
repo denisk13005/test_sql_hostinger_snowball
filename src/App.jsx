@@ -76,6 +76,7 @@ function App() {
       setTimeout(() => {
         setLoading(false)
       }, 5000)
+      console.debug(usersRes, "debug")
     }
     getData()
   }, [])
