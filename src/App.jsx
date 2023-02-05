@@ -75,7 +75,7 @@ function App() {
       setCommands(commandsRes)
       setTimeout(() => {
         setLoading(false)
-      }, 5000)
+      }, 1000)
       console.debug(usersRes, "debug")
     }
     getData()
