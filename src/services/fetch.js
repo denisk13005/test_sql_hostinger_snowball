@@ -4,9 +4,9 @@
  */
 
 export const fetchUsers = async () => {
-  let users = await fetch("http://localhost:8800/userInfos").then((res) =>
-    res.json()
-  )
+  let users = await fetch(
+    "https://backend-test-connect-bdd.vercel.app/userInfos"
+  ).then((res) => res.json())
   return users
 }
 
@@ -16,8 +16,8 @@ export const fetchUsers = async () => {
  */
 
 export const fetchCommands = async () => {
-  let commands = await fetch("http://localhost:8800/userCommands").then((res) =>
-    res.json()
-  )
+  let commands = await fetch(
+    "https://backend-test-connect-bdd.vercel.app/userCommands"
+  ).then((res) => res.json())
   return commands
 }
